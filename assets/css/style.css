@@ -28,6 +28,7 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  border:1px solid black;
 }
 
 .row {
@@ -68,4 +69,24 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+/* .container{
+  padding: 20px;
+} */
+
+.day{
+  padding: 25px;
+  border:1px solid black;
+}
+
+.time{
+  border:1px solid black;
+  border-left: 0;
+  padding: 25px;
+}
+
+.disk{
+  border:1px solid black;
+  border-radius: 0 8px 8px 0;
 }
