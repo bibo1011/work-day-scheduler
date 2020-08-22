@@ -1,8 +1,32 @@
 // current date
-var currentDay = document.getElementById("#currentDay")
-currentDay= moment().format("dddd, MMMM Do");
+var currentDay= moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 console.log(currentDay);
+
+// $("<textarea>").click(function() {
+
+// });
+
+$("button").on("click", function(){
+    var event = document.querySelector("textarea");
+    localStorage.setItem("event", event.value);
+    console.log(event.value);
+})
+
+// $("<button>").on("click",function(){
+//     $()
+// })
+
+// var events = {};
+// var saveEvents = function() {
+//     localStorage.setItem("events", JSON.stringify(events));
+//     $("<button>").on("click", "p", function() {
+//       var text = $(this)
+//         .text()
+//         .trim();
+//       console.log(text);
+//     })
+// }
 
 // // create an event
 // var createTask = function(taskText, taskDate, taskList) {
