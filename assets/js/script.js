@@ -3,13 +3,133 @@ var currentDay= moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 console.log(currentDay);
 
-// adding event 
+let currentHour = parseInt(moment().format('HH'));
+console.log(currentHour);
+   
+function color(){
+    var hour = document.getElementsByClassName("hour")
+    if (currentHour > 9){
+        $("textarea").addClass("future");
+        console.log(hour);
+    } else if 
+        (currentHour < 9){
+        $("textarea").addClass("past");
+        console.log(hour);
+    } else 
+        (currentHour === 9)
+        $("textarea").addClass("present");
+        console.log(hour);
+       
+//     if (currentHour > 10){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 10){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 10)
+//         $("textarea").addClass("present");
+//         console.log(hour);
 
+//     if (currentHour > 11){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 11){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 11)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+
+//     if (currentHour > 12){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 12){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 12)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+
+//     if (currentHour > 1){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 1){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 1)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+
+//     if (currentHour > 2){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 2){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 2)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+        
+//     if (currentHour > 3){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 3){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 3)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+
+//     if (currentHour > 4){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 4){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 4)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+
+//     if (currentHour > 5){
+//         $("textarea").addClass("future");
+//         console.log(hour);
+//     } else if 
+//         (currentHour < 5){
+//         $("textarea").addClass("past");
+//         console.log(hour);
+//     } else 
+//         (currentHour === 5)
+//         $("textarea").addClass("present");
+//         console.log(hour);
+}
+
+
+loadEvents = function() {
+    localStorage.getItem("event9am");
+}
+
+// adding event 
 $("#btn9").on("click", function(){
     var event9 = document.getElementById("9am");
     localStorage.setItem("event9am", event9.value);
     console.log(event9.value);
 })
+
+
 $("#btn10").on("click", function(){ 
     var event10 = document.getElementById("10am");
     localStorage.setItem("event10am", event10.value);
@@ -51,12 +171,12 @@ $("#btn5").on("click", function(){
     console.log(event5.value);  
 })
 
+color();
+
+loadEvents();
 
 
-// var officeHours = ["9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5apm"];
-// for (var i = 0; officeHours.length; i++){
-//     console.log(officeHours[i])
-// }
+
 
 
 
