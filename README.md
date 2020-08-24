@@ -10,5 +10,7 @@ This challenge requires to create a simple calendar application that allows a us
 
 ## Screenshot:
 
-![alt text] [screenshot]
-[screenshot]:  https://bibo1011.github.io/work-day-scheduler/assets/images/workday.png "work day scheduler"
+![Alt text](./assets/images/workday.png "work day scheduler")
+
+
+ 
