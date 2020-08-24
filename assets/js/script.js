@@ -8,113 +8,19 @@ console.log(currentHour);
    
 function color(){
     var hour = document.getElementsByClassName("hour")
-    if (currentHour > 9){
+    if (currentHour > hour){
         $("textarea").addClass("future");
         console.log(hour);
     } else if 
-        (currentHour < 9){
+        (currentHour < hour){
         $("textarea").addClass("past");
         console.log(hour);
     } else 
-        (currentHour === 9)
+        (currentHour === hour)
         $("textarea").addClass("present");
         console.log(hour);
        
-    if (currentHour > 10){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 10){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 10)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 11){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 11){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 11)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 12){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 12){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 12)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 1){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 1){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 1)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 2){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 2){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 2)
-        $("textarea").addClass("present");
-        console.log(hour);
-        
-    if (currentHour > 3){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 3){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 3)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 4){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 4){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 4)
-        $("textarea").addClass("present");
-        console.log(hour);
-
-    if (currentHour > 5){
-        $("textarea").addClass("future");
-        console.log(hour);
-    } else if 
-        (currentHour < 5){
-        $("textarea").addClass("past");
-        console.log(hour);
-    } else 
-        (currentHour === 5)
-        $("textarea").addClass("present");
-        console.log(hour);
+    
 }
 
 
